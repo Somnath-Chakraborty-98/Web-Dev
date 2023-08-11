@@ -1,0 +1,27 @@
+Front end
+	HTML		- main
+	CSS			- main
+	BOOTSTRAP
+	JAVASCRIPT	- main
+	PHP			- office
+	JQUERY
+	REACT JS 	- main
+
+
+
+
+Back end
+	Node JS 	- main
+	express JS
+	PHP			- office
+
+
+
+DB
+	mongoDB		- main
+
+
+
+Project
+	Portfolio
+	https://www.youtube.com/watch?v=MkcfB7S4fq0
