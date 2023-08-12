@@ -1,0 +1,26 @@
+* { font-style: italic;}
+
+header{
+    width: auto;
+    height: 30%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+div{
+    width: 100px;
+    height: auto;
+    background-color: aquamarine;
+}
+
+.div2{
+    width: 100%;
+    height: 100px;
+    background-color:aqua;
+}
+
+div3{
+    width: 100%;
+    height: 100px;
+    background-color:aqua;
+}
