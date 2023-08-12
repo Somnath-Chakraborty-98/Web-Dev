@@ -1,0 +1,11 @@
+elements			tags(opening and closing tags)
+
+html				<html>
+head				<head>
+meta				<meta>	
+title				<title>
+body				<body>
+
+
+self closing tags - 
+	<meta>, <link>, <he>, <br>, <img>, <input>, <source>, <embed>, <param>, <wbr>

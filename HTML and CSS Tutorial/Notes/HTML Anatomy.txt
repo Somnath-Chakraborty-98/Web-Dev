@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+	This is a document declaration also known as document type declaration DTD.
+	It basically tells the browser that this is and HTML Document
+
+-------------------------------------------------------------------------------------------
+<html lang="en">...</html>
+opening tag			closing tag	- root element
+	This is a HTML tag and it tells the browser everything in between them in HTML document
+	"en" - helps the browser to know the language ie.e english
+	
+-------------------------------------------------------------------------------------------
+<head>...</head>
+	Everthing here is just additional information for the browser, meta charset, 
+	title(AREA AT THE TAB)
+	
+-------------------------------------------------------------------------------------------
+<body>...</body>
+	body area is basically everything that will show up to the user
+	It will be shown to the user through browser's window that's also known as viewport
+
+-------------------------------------------------------------------------------------------
+<meta charset="UTF-8" />
+	Informs the browser which encoding scheme is used.UTF-8 is the world’s most 
+	popular coding scheme.
