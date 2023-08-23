@@ -27,3 +27,7 @@ block_div{
     display: block;
     
 }
+
+.img_modify_box{
+    box-sizing: border-box;
+}
