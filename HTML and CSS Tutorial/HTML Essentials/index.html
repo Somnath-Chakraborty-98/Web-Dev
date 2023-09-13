@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Web Page</title>
+        <meta name="Somnath's Page" content="Page Description"/>
+        <meta content="text/html"; charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <style>
+            body{
+                color: blue;
+                text-align: left;
+            }
+        </style>
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+        This is Sample HTML document
+        <h3>This is Header 3</h3>
+        <p>Enter your name: <input type="text" id = "fname" onchange="myFunction()"></p>
+    </body>
+
+</html>
