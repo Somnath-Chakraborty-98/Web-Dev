@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    background-color: yellowgreen;
+    text-decoration: wavy;
+}
+
+body{
+    background-color: palevioletred;
+}
+
+button{
+    color: white;
+    background-color: black;
+}
