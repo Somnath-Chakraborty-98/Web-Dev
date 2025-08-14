@@ -93,7 +93,13 @@ div.after(newBtn);
 
 //////////////////////////////////////////////////////////////////////////////
 
-console.log("ANS");
+console.log("ANS 1");
 let ans1 = document.querySelectorAll("h2")[1];
 ans1.innerText = ans1.innerText + " from Somnath";
 console.dir(ans1.innerText);
+
+console.log("ANS 2");
+let ans2 = document.querySelectorAll("p")[2];
+console.dir(ans2.innerText);
+ans2.setAttribute("class", "newClass");
+ans2.classList.add("a1");

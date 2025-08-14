@@ -20,3 +20,11 @@ button{
 #para{
     font-style: italic;
 }
+
+.newClass{
+    background-color: greenyellow;
+}
+
+.a1{
+    color: red;
+}
