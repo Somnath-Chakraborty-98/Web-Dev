@@ -8,11 +8,14 @@ Front end
 	REACT JS 	- main
 
 
+Project
+	Portfolio
 
 
 Back end
 	Node JS 	- main
 	express JS
+	next js
 	PHP			- office
 
 
@@ -22,6 +25,5 @@ DB
 
 
 
-Project
-	Portfolio
-	https://www.youtube.com/watch?v=MkcfB7S4fq0
+
+https://www.youtube.com/watch?v=MkcfB7S4fq0

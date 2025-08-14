@@ -1,0 +1,28 @@
+button {
+    margin-bottom: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box:active {
+    background-color: lightcoral;
+}
+
+#btn3{
+    background-color: lightgreen;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
