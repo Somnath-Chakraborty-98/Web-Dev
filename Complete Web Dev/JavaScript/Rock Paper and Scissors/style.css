@@ -1,0 +1,67 @@
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  background-color: indianred;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.buttons_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 5%;
+  flex-wrap: nowrap;   /* keep all in one line */
+}
+
+.btn {
+  flex: 1 1 0;           /* allow resizing */
+  max-width: 200px;      /* don’t grow too large */
+  aspect-ratio: 1 / 1;   /* keeps perfect square → circle */
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 3rem;
+}
+
+.move {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5%;
+}
