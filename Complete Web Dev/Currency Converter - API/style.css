@@ -1,0 +1,84 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+body {
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+.container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+h2{
+    padding-bottom: 15%;
+}
+
+.amount{
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+#amount{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    size: 50rem;
+}
+
+#amt{
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.from, .to{
+    display: flex;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#from_para{
+    padding-right: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#to_para{
+    padding-right: 97px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.select_currency{
+    padding-right: 10px;
+}
+
+img{
+    padding-left: 12px;
+}
+
+#convertBtn{
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 8px;
+      width: 50%;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 12px;
+    }

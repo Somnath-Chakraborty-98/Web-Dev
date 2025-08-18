@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Currency Cornverter</h2>
+        <form>
+            <div class = "amount">
+                <p id = "amt">Enter Amount:</p>
+                <input type="number" id="amount" placeholder="Enter amount" value="100">
+            </div>
+
+            <div class = "from">
+                <p id = "from_para">From</p>
+                <select class = "select_currency">
+                    <option value = "INR">INR - Indian Rupees</option>
+                    <option value = "USD">USD</option>
+                    <option value = "EUR">EUR</option>
+                    <option value = "AUD">AUD</option>
+                </select>
+                <img src="https://flagsapi.com/IN/flat/32.png" alt="IN">
+            </div>
+
+            <div class="to">
+                <p id = "to_para">To</p>
+                <select class = "select_currency">
+                    <option value = "INR">INR - Indian Rupees</option>
+                    <option value = "USD" selected>USD</option>
+                    <option value = "EUR">EUR</option>
+                    <option value = "AUD">AUD</option>
+                </select>
+                <img src="https://flagsapi.com/US/flat/32.png" alt="US">
+            </div>
+
+            <button id = "convertBtn" type="submit">Convert</button>
+
+            <div class="converted_amt">
+                <p>Converted Amount = </p>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
