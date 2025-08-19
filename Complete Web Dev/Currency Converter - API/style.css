@@ -81,4 +81,10 @@ img{
       border-radius: 8px;
       cursor: pointer;
       margin: 12px;
-    }
+}
+
+.converted_amt{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
