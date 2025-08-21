@@ -1,6 +1,9 @@
-let BASE_URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/inr.json";
+let BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
 
 const dropdown = document.querySelectorAll(".select_currency");
+let button = document.querySelector("#convertBtn");
+let amt = document.querySelector("#amount");
+let convertedAmount = document.querySelector("#converted_amt");
 
 for (let select of dropdown) {
     for (code in countryList) {
@@ -29,3 +32,29 @@ const updateFlag = (element) =>{
     let img = element.parentElement.querySelector("img");
     img.src = newSrc;
 };
+
+button.addEventListener("click", async (event) =>{
+    event.preventDefault();
+    let amtVal = amt.value;
+    if (amtVal === "" || amtVal < 1)
+    {
+        amtVal = 1;
+        amt.value = "1";
+    }
+
+    console.log(amtVal);
+    // BASE_URL/FROM_CURRENCY/TO_CURRENCY.json
+    const URL = `${BASE_URL}/${dropdown[0].value.toLowerCase()}/${dropdown[1].value.toLowerCase()}.json`;
+    console.log(URL);
+
+    let response = await fetch(URL);
+    console.log(response);
+    let data = response.json();
+    let rate = data[dropdown[1].value.toLowerCase()];
+    console.log(rate);
+
+    console.log(convertedAmount.innerText);
+    let finalAmount = dropdown[0].value * rate;
+    finalAmount = 80;
+    convertedAmount.innerText = convertedAmount.innerText + ` ${finalAmount}` + `${dropdown[1].value}`;
+});
