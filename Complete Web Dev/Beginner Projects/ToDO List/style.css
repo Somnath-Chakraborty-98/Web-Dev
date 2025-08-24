@@ -75,7 +75,7 @@ body{
   gap: 10px;
 }
 
-button {
+#addBtn {
   padding: 10px 16px;
   background: #007BFF;
   color: #fff;
@@ -92,7 +92,7 @@ button {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-button:hover {
+#addBtn:hover {
   background: #0056b3;
 }
 
@@ -107,5 +107,69 @@ button:hover {
   border-radius: 8px;
   padding: 10px;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;      /* remove default bullets */
+  padding-left: 0;       /* remove default left padding */
+  margin: 5px;             /* optional: remove margin */
+}
+
+li {
+  margin: 5px 0;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  border: 1px solid #ccc;   
+  border-radius: 6px;   
+  padding: 5px 10px;     /* space inside li */
+}
+
+.task-text {
+  flex: 1;                /* make text take available space */
+  word-break: break-word; /* prevent overflow */
+  margin-right: 10px;     /* small gap before buttons */
+}
+
+li button {
+  margin-left: auto;     /* pushes button to the far right */
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+/* ✅ Save button (green) */
+button.save {
+  background-color: #28a745;
+}
+
+button.save:hover {
+  background-color: #218838;
+}
+
+/* ❌ Delete button (red) */
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+li[tag="selected"] {
+  text-decoration: line-through; /* strike a line across text */
+  color: gray;                   /* faded look */
+}
+
+li[tag="selected"] .save {
+  pointer-events: none; /* disable clicking */
+  opacity: 0.5;         /* show it as disabled */
+  cursor: not-allowed;  /* change cursor */
 }
                 
