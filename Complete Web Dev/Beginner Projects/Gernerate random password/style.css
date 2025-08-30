@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #0b5bdc, #2b87ff);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #0b5bdc;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+#length {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+
+#length-value {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: #0b5bdc;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+
+#password {
+    width: calc(100% - 3rem);
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.password-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button {
+    background: #0b5bdc;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #094bb5;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#copy {
+    background: #0b5bdc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+}
+
+#copy:hover {
+    background: #094bb5;
+}
+
+#copy:active {
+    transform: scale(0.97);
+}
+
+#generate {
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.container > div,
+.container > p {
+    margin-bottom: 1rem;
+}
