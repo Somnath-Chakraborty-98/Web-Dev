@@ -95,6 +95,22 @@ background: #063074;
     transform: scale(1.05);
 }
 
+.correct {
+  background-color: green;
+  color: white;
+  border-color: darkgreen;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+  border-color: darkred;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6; 
+}
 
 #nextBtn{
     background: #0d4fb9;
