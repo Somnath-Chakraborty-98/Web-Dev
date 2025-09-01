@@ -16,25 +16,25 @@
             <h2>Password Length</h2>
             <label for="length">Choose length:</label>
             <input id="length" name="length" type="range" min="8" max="32" value="12" />
-            <output id="length-value">12</output>
+            <output id="lengthValue">12</output>
         </div>
 
         <div>
             <h2>Include</h2>
             <label>
-                <input type="checkbox" name="upper" checked />
+                <input type="checkbox" id="upper" checked />
                 Uppercase Letters (A–Z)
             </label>
             <label>
-                <input type="checkbox" name="lower" checked />
+                <input type="checkbox" id="lower" checked />
                 Lowercase Letters (a–z)
             </label>
             <label>
-                <input type="checkbox" name="digits" checked />
+                <input type="checkbox" id="digits" checked />
                 Numbers (0–9)
             </label>
             <label>
-                <input type="checkbox" name="symbols" checked />
+                <input type="checkbox" id="symbols" checked />
                 Symbols (! @ # $ % & *)
             </label>
         </div>
@@ -51,6 +51,8 @@
             <button id="generate" type="button">Generate Password</button>
         </p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
