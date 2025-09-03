@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #8C52FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+    max-height: 800px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cityContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+#cityName{
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 280px;
+}
+
+#cityName:focus {
+    outline: none;
+    border: 2px solid #debff4;
+    background: #f9f5ff;
+    color: #333;
+}
+
+button{
+    background: #debff4;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #c49ae0;
+    cursor: pointer;
+}
