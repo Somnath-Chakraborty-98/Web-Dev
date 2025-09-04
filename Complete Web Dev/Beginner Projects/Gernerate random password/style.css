@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #fff;
-    min-width: 500px;
+    width: 90%;
     max-width: 650px;
     padding: 2rem;
     border-radius: 16px;
@@ -123,4 +123,18 @@ button:active {
 .container > div,
 .container > p {
     margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    #password {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
 }
