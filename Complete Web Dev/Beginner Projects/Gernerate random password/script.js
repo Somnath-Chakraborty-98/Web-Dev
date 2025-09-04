@@ -42,15 +42,14 @@ genPassword.addEventListener("click", generatePassword);
 let copyBtn = document.getElementById("copy");
 copyBtn.addEventListener("click", () => {
 
-    let generatedPassword = document.getElementById("password");
-
-    if (!genPassword.value) {
+    let generatedPassword = document.getElementById("password").value;
+    if (0 === generatedPassword.length) {
         alert("No password to copy!");
         return;
     }
 
     // Copy to clipboard
-    navigator.clipboard.writeText(generatedPassword.value)
+    navigator.clipboard.writeText(generatedPassword)
         .then(() => {
             alert("Password copied to clipboard ✅");
         })
@@ -60,8 +59,7 @@ copyBtn.addEventListener("click", () => {
 });
 
 function generatePassword() {
-    if (!includeUpperCase.checked && !includeLowerCase.checked && !includeDigits.checked && !includeSymbols.checked)
-    {
+    if (!includeUpperCase.checked && !includeLowerCase.checked && !includeDigits.checked && !includeSymbols.checked) {
         alert("Cannot generate password. You need to select at least one character type (uppercase, lowercase, numbers, or symbols).");
         return;
     }
